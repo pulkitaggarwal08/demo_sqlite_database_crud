@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_rows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/tv_rollno"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="1"
+            android:textColor="#FF4081" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.2"
+            android:gravity="center"
+            android:maxLines="2"
+            android:text="Pulkit"
+            android:textColor="#FF4081" />
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_weight="1.2"
+            android:gravity="left|center"
+            android:maxLines="2"
+            android:text="9466508450"
+            android:textColor="#FF4081" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/ll_rows"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

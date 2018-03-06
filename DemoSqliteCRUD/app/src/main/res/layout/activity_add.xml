@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp">
+
+        <EditText
+            android:id="@+id/et_add_rollno"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#b3b3b3"
+            android:gravity="left|center"
+            android:hint="Roll Number"
+            android:padding="5dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/et_add_rollno"
+            android:layout_marginTop="30dp"
+            android:background="#b3b3b3"
+            android:gravity="left|center"
+            android:hint="Name"
+            android:padding="5dp"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/et_name"
+            android:layout_marginTop="30dp"
+            android:background="#b3b3b3"
+            android:gravity="left|center"
+            android:hint="Phone"
+            android:padding="5dp"
+            android:textSize="25dp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+</RelativeLayout>
